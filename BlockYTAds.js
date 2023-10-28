@@ -1,5 +1,5 @@
 /**
- * ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-path=YOUR_SCRIPT_NAME.js
+ * ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-path=BlockYTAds.js
  */
 function blockAds() {
     // Add your ad-blocking logic here
