@@ -1,6 +1,12 @@
 /**
  * ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-path=https://raw.githubusercontent.com/Cody005/Script/main/BlockYTAds.js?token=GHSAT0AAAAAACJRWXSC65BTIGCCNDM6ZKI6ZJ5OIOA
  */
+
+[URL Rewrite]
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
+[MITM]
+hostname = %APPEND% youtubei.googleapis.com, *.googlevideo.com
+
 function blockAds() {
     // Add your ad-blocking logic here
     // For example, you can use CSS to hide ad elements or remove them from the DOM
