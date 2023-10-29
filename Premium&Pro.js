@@ -7,10 +7,10 @@
 ******************************************
 
 [mitm]
-hostname = api for the apps
+hostname = pxxxqh-launches.appsflyersdk.com
 
 [rewrite_local]
-url match regex url script-response-body https://raw.githubusercontent.com/script url.js
+^https?:\/\/pxxxqh-launches\.appsflyersdk\.com\/?  script-response-body https://raw.githubusercontent.com/Cody005/Script/main/Premium%26Pro.jsjs
 
 ******************************************/
 const body = $response.body
