@@ -14,7 +14,7 @@ hostname = pxxxqh-launches.appsflyersdk.com
 
 ******************************************/
 const body = $response.body
-    .replace(/isVip":\d/g, 'isVip":1')
-    .replace(/vip":"\d"/g, 'vip":"1"')
+    .replace(/isPremium":\d/g, 'isPremium":1')
+    .replace(/premium":"\d"/g, 'premium":"1"')
     .replace(/expireDate":\d/g, 'expireDate":4082853940000');
 $done({ body });
