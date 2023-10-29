@@ -10,7 +10,7 @@
 hostname = pxxxqh-launches.appsflyersdk.com
 
 [rewrite_local]
-^https?:\/\/pxxxqh-launches\.appsflyersdk\.com\/?  script-response-body https://raw.githubusercontent.com/Cody005/Script/main/Premium%26Pro.jsjs
+^https?:\/\/pxxxqh-launches\.appsflyersdk\.com\/?  script-response-body https://raw.githubusercontent.com/Cody005/Script/main/Premium%26Pro.js
 
 ******************************************/
 const body = $response.body
