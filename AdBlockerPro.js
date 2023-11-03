@@ -16,7 +16,7 @@ hostname = buy.itunes.apple.com
 var objc = JSON.parse($response.body);
 
     objc = {
-  "status" : 0,
+  "status" : active,
   "receipt" : {
     "app_item_id" : 17999170,
     "receipt_creation_date" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
