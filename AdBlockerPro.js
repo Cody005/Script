@@ -78,7 +78,7 @@ var objc = JSON.parse($response.body);
   ],
   "pending_renewal_info" : [
     {
-      "product_id" : "",
+      "product_id" : "com.5skay.protectad.sub.lifetime",
       "original_transaction_id" : "4A984383-1C64-45E7-AE4E-E33D19045155",
       "auto_renew_product_id" : "",
       "auto_renew_status" : "1"
