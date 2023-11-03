@@ -11,6 +11,7 @@ https://beta-api.crunchyroll.com/subs/v2/products/cr.ios.fanpack.annually url sc
 
 [mitm]
 hostname = beta-api.crunchyroll.com
+*******************************/
 
 var objc = JSON.parse($response.body);
 
