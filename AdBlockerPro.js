@@ -1,8 +1,17 @@
+/******************************
+
+Application : Quantumultx
+Author：MGMdev
+ReleaseDate：2023-11-02
+
+*******************************
+
 [rewrite_local]
-https://buy.itunes.apple.com/verifyReceipt url script-response-body
+https://buy.itunes.apple.com/verifyReceipt url script-response-body https://raw.githubusercontent.com/Cody005/Script/main/AdBlockerPro.js
 
 [mitm]
 hostname = buy.itunes.apple.com
+*******************************/
 
 var objc = JSON.parse($response.body);
 
