@@ -68,7 +68,7 @@ var objc = JSON.parse($response.body);
       "is_trial_period" : "false",
       "original_transaction_id" : "17999170",
       "original_purchase_date_pst" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
-      "product_id" : "com.5skay.protectad.sub.lifetime",
+      "product_id" : "com.5skay.protectad.sub.yearly",
       "purchase_date" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
       "original_purchase_date_ms" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
       "expires_date_ms" : "4070908800000",
@@ -78,7 +78,7 @@ var objc = JSON.parse($response.body);
   ],
   "pending_renewal_info" : [
     {
-      "product_id" : "com.5skay.protectad.sub.lifetime",
+      "product_id" : "com.5skay.protectad.sub.yearly",
       "original_transaction_id" : "4A984383-1C64-45E7-AE4E-E33D19045155",
       "auto_renew_product_id" : "",
       "auto_renew_status" : "1"
