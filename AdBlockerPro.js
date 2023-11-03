@@ -33,7 +33,7 @@ var objc = JSON.parse($response.body);
         "is_trial_period" : "false",
         "original_transaction_id" : "17999170",
         "original_purchase_date_pst" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
-        "product_id" : "",
+        "product_id" : "com.5skay.protectad.sub.yearly",
         "purchase_date" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
         "original_purchase_date_ms" : "2023-11-03 18:02:31 +0000 Europe/Copenhagen",
         "expires_date_ms" : "4070908800000",
