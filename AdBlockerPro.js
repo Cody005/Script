@@ -18,7 +18,7 @@ hostname = buy.itunes.apple.com
 var mgmdev = JSON.parse($response.body);
 
 mgmdev.data.isPremium = true;
-chxm1023.data.timeExpire = 4092599349;
+mgmdev.data.timeExpire = 4092599349;
 
 $done({body : JSON.stringify(mgmdev)});
 
