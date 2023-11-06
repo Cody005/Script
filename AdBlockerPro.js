@@ -7,40 +7,20 @@ ReleaseDate：2023-11-02
 *******************************
 
 [rewrite_local]
-https://beta-api.crunchyroll.com/subs/v2/products/cr.ios.fanpack.annually url script-response-body url script-response https://raw.githubusercontent.com/Cody005/Script/main/AdBlockerPro.js
-
+https://cdn-api.scruffapp.com/app/store/boost?device_id=e9bcf5775594eb2b8390c63eb73a75d2&hardware_id=9483a7bd73066a4a68c1f3855bf67e80&client_semver=7.12.0&flavor=1&client_version=7.1200&device_type=1 url script-response-body url script-response https://raw.githubusercontent.com/Cody005/Script/main/AdBlockerPro.js
+******************************/
 [mitm]
-hostname = beta-api.crunchyroll.com
-*******************************/
+hostname = cdn-api.scruffapp.com
 
 var objc = JSON.parse($response.body);
 
-    objc = {
-  {
-  "source" : "itunes",
-  "benefit_package" : {
-    "name" : "fan_pack_non_english_intl_annual",
-    "benefits" : [
-      "cr_premium",
-      "cr_fan_pack",
-      "no_ads",
-      "catalog",
-      "simulcast",
-      "manga_library",
-      "concurrent_streams.4",
-      "offline_viewing",
-      "annual_discount.percent_16",
-      "cr_bento"
-    ]
-  },
-  "sku" : "cr.ios.fanpack.annually",
-  "__actions__" : Active,
-  "cycle_duration" : "P1Y",
-  "__class__" : "product",
-  "__href__" : "/subs/v2/products/cr.ios.fanpack.annually",
-  "free_trial_duration" : "False",
-  "tier" : "fan_pack",
-  "__links__" : null
+objc = {
+  "results": {
+    "available_count": 1,
+    "stats_available": true,
+    "boost_state": active,
+    "eligible_if_online": true
+  }
 }
-}
-$done({body : JSON.stringify(objc)});
+
+$done({ body: JSON.stringify(objc) });
