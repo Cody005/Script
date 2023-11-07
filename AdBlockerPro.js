@@ -7,7 +7,7 @@ ReleaseDate：2023-11-02
 *******************************
 
 [rewrite_local]
-https://api.revenuecat.com/v1/receipts url script-response-body  https://raw.githubusercontent.com/Cody005/Script/main/AdBlockerPro.js
+^https:\/\/api\.revenuecat\.com\/v1\/receipts url script-response-body  https://raw.githubusercontent.com/Cody005/Script/main/AdBlockerPro.js
 
 [mitm]
 hostname = api.revenuecat.com
