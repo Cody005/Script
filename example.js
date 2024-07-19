@@ -15,22 +15,23 @@ parsedContent = modifyDecryptedContent(parsedContent);
 
 // Function to apply custom modifications to the decrypted content
 function modifyDecryptedContent(content) {
-    // Add your custom modification script here
-    // Example script for modifying the decrypted content
-    content.entitlements = [
-        {
-            "redeem": {},
-            "expires_date_ms": 3859786074000,
-            "purchase_date_ms": 1655289297000,
-            "product_identifier": "SpeedTest_RemoveAd_1_Year_20181015",
-            "is_in_intro_offer_period": false,
-            "environment": "Production",
-            "auto_renew": true,
-            "is_in_trial_period": false,
-            "entitlement_id": "premium"
-        }
-    ];
-    content.is_valid = true;
+    // Example modification script
+    content = {
+        "entitlements": [
+            {
+                "redeem": {},
+                "expires_date_ms": 3859786074000,
+                "purchase_date_ms": 1655289297000,
+                "product_identifier": "SpeedTest_RemoveAd_1_Year_20181015",
+                "is_in_intro_offer_period": false,
+                "environment": "Production",
+                "auto_renew": true,
+                "is_in_trial_period": false,
+                "entitlement_id": "premium"
+            }
+        ],
+        "is_valid": true
+    };
 
     // Add more custom scripts as needed
 
